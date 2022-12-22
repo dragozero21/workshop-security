@@ -8,7 +8,7 @@ on:
 jobs:
   build-and-test:
     name: Build and test
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-20.08
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -19,5 +19,5 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm install
-      - name: Run unit tests
-        run: npm test
+      - name: Run test
+        run: ls -lah
